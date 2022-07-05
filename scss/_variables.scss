@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,500;0,900;1,400;1,900&family=Montserrat:wght@200;600;700;900&family=Roboto:wght@100;300;400;700&display=swap');
+
+
+// GLOBALES
+html{
+    font-size: 63%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: "roboto", sans-serif;
+    background-color: #212121;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffff;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+nav, .infohotel, .infoparraf, .footer-content{
+    width: 80%;
+    margin: auto;
+}
+
+.titulo-infohotel, .infoparraf{
+    margin-bottom: 10%;
+}
+
+
+
+// VARIABLES 
+
+$font-p: 1.5rem;
+$font-h1: 3.2rem;
+$font-h2: 2.5rem;
+$font-h3: 2.0rem;
+
+p{
+    font-size: $font-p;
+    color: #ffff
+}
+
+h1{
+    font-size: $font-h1;
+    color: #fff;
+}
+
+h2{
+    font-size: $font-h2;
+}
+
+h3{
+    font-size: $font-h3;
+    font-weight: lighter;
+}
+
+.btn {
+    border: none;
+    border-radius: 15px;
+    padding: 0.8em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-principal{
+    @extend .btn;
+    color: #ffff;
+    background-color: #2980B9 ;
+}
+
+.btn-secundario{
+    @extend .btn;
+    color: #fff;
+    background-color:#C0392B ;
+}
+
+//uso de mixins en sass;
+
+@mixin caja-flex ($principal, $cruzado, $wrap){
+        display: flex;
+        justify-content: $principal;
+        align-items: $cruzado;
+        flex-wrap: $wrap;
+}
+
+
+
+
+
+
