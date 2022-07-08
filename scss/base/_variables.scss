@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
 // VARIABLES 
 // TAMAÑO FUENTES
 $font-p: 1.5rem;
@@ -13,12 +21,7 @@ $font-h1: 3.2rem;
 $font-h2: 2.5rem;
 $font-h3: 2.0rem;
 // COLORES
-$colores:
-#212121
-#2980B9
-#ffff
-#C0392B
-#17202A ;
+
 
 
 
