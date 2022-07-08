@@ -1,77 +1,8 @@
-@import "variables";
+@import "./base/variables";
+@import "./components/index";
+@import "./components/galeria";
 
 
-.logo{
-  width: 80px;
-  padding: 10px 10px;
- 
+
   
-}
-
-header{
-  width: 100%;
-  
-
-  nav{
-    @include caja-flex(space-between, center, nowrap);
-    background-color: #17202A;
-    width: 100%;
-
-    .boton {
-      padding-top: 10px;
-    }
-
-    ul{
-      display: flex;
-      padding-top: 10px;
-  
-      a{
-        padding: 10px;
-        font-size: 1.4rem;
-        color: #fff;
-  
-        &:hover{
-          color: #2980B9 ;
-          transform: scale(1.1);
-        }
-      }
-    }    
-  }
-}
-
-.infohotel{
-  padding-top: 200px;
-  padding-bottom: 50px;
-  @include caja-flex(space-between, center, nowrap);
-      .flex-item1{ //FOTO
-        text-align: center;
-      }
-      .flex-item2{ // H1 P
-        text-align: center;
-      }
-
-      h1{
-        margin-top: 0;
-        padding-right: 20px;
-        font-size: $font-h1;
-      }
-      p{
-        padding-right: 20px;
-        padding-bottom: 10px;
-        font-size: $font-p;
-      }
-}
-
-
-footer{
-  width: 100%;
-  min-height: 80px;
-  background-color: #17202A;
-  position: fixed;
-  bottom: 0;
-    .footer-contenedor{
-      text-align: center;
-      padding-top: 30px;
-    }
-}
 
