@@ -1,7 +1,21 @@
 // COLORES
 $colores:
-#212121
+#212121 
 #2980B9
 #ffff
-#C0392B
+#cc0d0d
 #17202A ;
+
+$color-primario:#17202A; // funcion "darken o lighten" ($color-primario, 20%)
+$color-secundario:#2980B9;
+
+//TITULOS
+$font-encabezados:
+30px,
+35px,
+40px,
+45px,
+50px,
+55px,
+
+
