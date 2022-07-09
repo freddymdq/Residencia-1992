@@ -1,6 +1,7 @@
 @import "../base/variables";
 @import "../base/extends";
 @import "../base/listas";
+@import "../base/mixins";
 
 html{
     height: 100%;
@@ -12,7 +13,7 @@ body{
 
 
 .contenedor{  
-    @extend %grid;
+    @include grid;
     
       @media screen and (max-width:480px) {
         grid-template-areas: 
@@ -44,7 +45,7 @@ body{
                         background-color: nth($colores, 4);
                         
                     }
-                    @media screen and (max-width: 940px) {
+                    @media screen and (max-width: 0px) {
                         display: none;
                         margin-right: 2vh;
                         
@@ -110,20 +111,16 @@ body{
 
     }
     .footer { 
-        grid-area: footer; 
-        height: 80px;
-        background-color: nth($colores, 5);
-        @extend %flexbox;
-        justify-content: center;  
-        #iconos i{
-            font-size: 50px;
-            padding: 0 10px;
-            @media screen and (max-width: 480px) {
-             font-size: 30px;
-             
+        @include footer;
+            #iconos i{
+                font-size: 50px;
+                padding: 0 10px;
+                @media screen and (max-width: 480px) {
+                font-size: 30px;
+                } 
             }
-         } 
-}
+            
+    } 
 }
   
 
