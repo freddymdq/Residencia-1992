@@ -33,11 +33,11 @@
 
     .footer { 
         @include footer;
-        #iconos i{
-            font-size: 50px;
-            padding: 0 10px;
-            @media screen and (max-width: 480px) {
-             font-size: 30px;
+            #iconos i{
+                font-size: 50px;
+                padding: 0 10px;
+                @media screen and (max-width: 480px) {
+                font-size: 30px;
              
             } 
         }

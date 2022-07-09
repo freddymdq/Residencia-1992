@@ -12,12 +12,23 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
+.contenedor .main .container-lg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 
-body {
-  min-height: 100%;
+.contenedor .main #imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .contenedor .main .container-lg {
@@ -39,49 +50,23 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
+/*
+@mixin varios ($ancho, $display, $center){
+    width: $ancho;
+    display: $display;
+    justify-content: $center;
 
-body {
-  min-height: 100%;
-}
+@include varios( 50% , grid , flex-end )
+}*/
+/*@mixin condicion ($colores){
+    background-color: $colores;
 
-.contenedor .main .container-lg {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-}
-
-.contenedor .main #imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-}
-
+    @if $colores == red{
+        border: 1px solid black
+    } @else{
+        border: 3px dotted blue;
+    }
+}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -224,14 +209,6 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-}
-
 .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
@@ -251,22 +228,23 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
+/*
+@mixin varios ($ancho, $display, $center){
+    width: $ancho;
+    display: $display;
+    justify-content: $center;
 
-body {
-  min-height: 100%;
-}
+@include varios( 50% , grid , flex-end )
+}*/
+/*@mixin condicion ($colores){
+    background-color: $colores;
 
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-}
-
+    @if $colores == red{
+        border: 1px solid black
+    } @else{
+        border: 3px dotted blue;
+    }
+}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -370,14 +348,6 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-}
-
 .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
@@ -397,14 +367,23 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
+/*
+@mixin varios ($ancho, $display, $center){
+    width: $ancho;
+    display: $display;
+    justify-content: $center;
 
-body {
-  min-height: 100%;
-}
+@include varios( 50% , grid , flex-end )
+}*/
+/*@mixin condicion ($colores){
+    background-color: $colores;
 
+    @if $colores == red{
+        border: 1px solid black
+    } @else{
+        border: 3px dotted blue;
+    }
+}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -450,14 +429,23 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
+/*
+@mixin varios ($ancho, $display, $center){
+    width: $ancho;
+    display: $display;
+    justify-content: $center;
 
-body {
-  min-height: 100%;
-}
+@include varios( 50% , grid , flex-end )
+}*/
+/*@mixin condicion ($colores){
+    background-color: $colores;
 
+    @if $colores == red{
+        border: 1px solid black
+    } @else{
+        border: 3px dotted blue;
+    }
+}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
