@@ -1,0 +1,103 @@
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/mixins";
+
+
+
+
+.contenedor{  
+    @include grid;
+    
+  
+  .header { 
+    grid-area: header;
+    background-color: nth($colores, 5);
+        .navbar{
+            
+            
+            .container-fluid{
+
+                a button{
+                    margin-right: 10vh;
+                    background: none;
+                    color: nth($colores, 2);
+                    border: 2px solid nth($colores, 2);
+                    border-radius: 15px;
+                    padding: 6px 10px;
+                    &:hover{
+                        font-weight: 400;
+                        color: nth($colores, 1);
+                        border: 2px solid nth($colores, 4);
+                        background-color: nth($colores, 4);
+                        
+                    }
+                    @media screen and (max-width:990px) {
+                        display: none;
+                        margin-right: 2vh;
+                        
+                    }
+                }
+
+           
+                a img{
+                    width: 150px;
+                    margin-left: 10vh;
+                    @media screen and (max-width: 480px) {
+                        width: 150px;
+                        margin-left: 2vh;
+                        
+                    }
+                }    
+            }
+        }
+    }
+    .main { 
+        .carusel{
+
+            @media screen and (max-width: 480px) {
+                display: contents;
+                
+            }
+        }
+        grid-area: main; 
+        background-color: nth($colores, 1);
+            .container{
+                margin-bottom: 50px;
+                @extend %flexbox;
+                flex-direction: column;
+               
+                h1{
+                    margin-top: 30px;
+
+                }
+                p{
+                   
+                    color: nth($colores, 3);
+                    font-size: 20px;
+                    @media screen and (max-width:380px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        
+            /*FIN MAIN*/
+        }
+
+    }
+    .footer { 
+        @include footer;
+            #iconos i{
+                font-size: 50px;
+                padding: 0 10px;
+                @media screen and (max-width: 480px) {
+                font-size: 30px;
+                } 
+            }
+            
+    } 
+
+  
+
+    
+
