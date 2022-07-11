@@ -10,8 +10,7 @@
 
 .contenedor{  
     @include grid;
-    
-      @media screen and (max-width:480px) {
+        @media screen and (max-width:480px) {
         grid-template-areas: 
         "header header header"
         "main main main"
@@ -25,8 +24,8 @@
         .navbar{
             
             
-            .container-fluid{
-
+            .container-lg{
+                
                 a button{
                     margin-right: 10vh;
                     background: none;
@@ -41,7 +40,7 @@
                         background-color: nth($colores, 4);
                         
                     }
-                    @media screen and (max-width: 580px) {
+                    @media screen and (max-width: 510px) {
                         display: none;
                         margin-right: 2vh;
                         
@@ -64,7 +63,7 @@
 
     .main { 
         grid-area: main; 
-        background-color: nth($colores, 1);
+        @extend %background-1;
 
         .carusel{
 
@@ -84,8 +83,8 @@
 
                 h2{
                     padding-top: 20px;
-                    color: nth($colores, 2);
-                    font-size: 50px; 
+                    color: nth($colores, 1);
+                    font-size: 60px; 
                     @media screen and (max-width:480px) {
                         font-size: 28px;
                         
@@ -94,7 +93,6 @@
                 h1{
                     
                     font-size: 70px;
-                    color: nth($colores, 3);
                     @media screen and (max-width:480px) {
                         font-size: 35px;
                     }
@@ -125,6 +123,11 @@
         }
         .container{
             margin-top: 3%;
+
+            h2{
+                color: nth($colores, 1);
+                font-size: 50px;
+            }
 
             
             .inner{

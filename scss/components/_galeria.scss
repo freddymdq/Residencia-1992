@@ -39,7 +39,7 @@
                         background-color: nth($colores, 4);
                         
                     }
-                    @media screen and (max-width: 0px) {
+                    @media screen and (max-width:510px) {
                         display: none;
                         margin-right: 2vh;
                         

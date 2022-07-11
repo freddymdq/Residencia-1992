@@ -1,10 +1,11 @@
 @import "./base/variables";
 @import "./base/extends";
 @import "./base/listas";
+@import "./base/mixins";
+@import "./components/nosotros";
 @import "./components/index";
 @import "./components/galeria";
 @import "./components/servicios";
-@import "./base/mixins";
 
 .contenedor{  
     @include grid;

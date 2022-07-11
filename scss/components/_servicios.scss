@@ -8,30 +8,49 @@
 
 .contenedor{  
     @include grid;
+    @extend %background-2;
   
   .header { 
     grid-area: header;
-    background-color: nth($colores, 5);
+    @extend %background-2;
+    .navbar{
+        .btn{
+            @media screen and (max-width:510px) {
+                display: none;
+                
+            }
+        }
+    }
   }
 
-    .main-servicios{ 
+    .container-fluid{ 
         grid-area: main; 
-        background-color: nth($colores, 1);
+        @extend %background-2;
         color: nth($colores, 3);
         text-align: center;
-        padding: 30px;
        
-        a{ text-decoration: none;}
+        h1{
+            color: nth($colores, 3);
+            padding-top: 40px;
+        }
+       
+        
+       
+        a{ 
+            text-decoration: none;
+              
+        }
         
         .contenedor__servicios{
             @extend %flexcard;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 50px auto;
+            
             
 
             .contenedor__card{
                
-                margin: 20px;
+                margin: 30px;
                 border-radius: 20px;
                 &:hover figure{
                     -webkit-transform: perspective(600px) rotateY(180deg);
@@ -54,9 +73,15 @@
                     transition: all ease .5s;
                     transform-style: preserve-3d;
                     transform: perspective(600px) rotateY(0deg);
+                    @media screen and (max-width:320px) {
+                        width: 200px;
+                        height: 250px;
+                
+                    }
                     
                     .front{
                        @extend %tarjeta;
+                       @extend %background-2;
                         img{
                             width: 300px;
                         }
@@ -67,7 +92,11 @@
                         transition: all ease .5s;
                     }
                     .back{
+                        @extend %background-2;
                         @extend %tarjeta;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
                         position: absolute;
                         top: 0;
                         color: nth($colores, 3);
@@ -78,6 +107,23 @@
                         transform: perspective(600px) rotateY(180deg);
                         backface-visibility: hidden;
                         overflow: auto;
+                        h2{
+                            
+                            font-size: 30px;
+                            @media screen and (max-width:320px) {
+                                padding-top: 30px;
+                                font-size: 15px;
+                                
+                               } 
+                        }
+                        p{
+                            @media screen and (max-width:320px) {
+                                font-size: 15px;
+                                
+                               } 
+                        }
+
+
                     }
                     
                 }
@@ -89,12 +135,9 @@
 
 
     .footer { 
-        grid-area: footer; 
-        display: flex;
-        height: 80px;
-        background-color: nth($colores, 5);
-        align-items: center;
-        justify-content: center;  
+        @extend %background-2;
+        @include footer;
+        
         #iconos i{
             font-size: 50px;
             padding: 0 10px;
