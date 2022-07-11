@@ -5,7 +5,9 @@
 
 
 
-
+#bgimg{
+    @extend %background-2;
+}
 
 
 .contenedor{  
@@ -40,7 +42,7 @@
                         background-color: nth($colores, 4);
                         
                     }
-                    @media screen and (max-width: 510px) {
+                    @media screen and (max-width: 990px) {
                         display: none;
                         margin-right: 2vh;
                         
@@ -65,7 +67,7 @@
         grid-area: main; 
         @extend %background-1;
 
-        .carusel{
+        #carusel{
 
             @media screen and (max-width: 480px) {
                 display: none;
@@ -83,7 +85,7 @@
 
                 h2{
                     padding-top: 20px;
-                    color: nth($colores, 1);
+                    color: nth($colores, 3);
                     font-size: 60px; 
                     @media screen and (max-width:480px) {
                         font-size: 28px;
@@ -94,7 +96,10 @@
                     
                     font-size: 70px;
                     @media screen and (max-width:480px) {
-                        font-size: 35px;
+                        font-size: 25px;
+                    }
+                    
+                        
                     }
                 }
                 p{
@@ -123,6 +128,7 @@
         }
         .container{
             margin-top: 3%;
+            
 
             h2{
                 color: nth($colores, 1);
@@ -157,7 +163,7 @@
         }
             
         } 
- }
+ 
   
 
     

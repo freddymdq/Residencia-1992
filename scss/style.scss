@@ -6,6 +6,7 @@
 @import "./components/index";
 @import "./components/galeria";
 @import "./components/servicios";
+@import "./components/contacto";
 
 .contenedor{  
     @include grid;
