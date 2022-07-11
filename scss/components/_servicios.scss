@@ -4,6 +4,8 @@
 @import "../base/mixins";
 
 
+
+
 .contenedor{  
     @include grid;
   
@@ -15,18 +17,75 @@
     .main-servicios{ 
         grid-area: main; 
         background-color: nth($colores, 1);
-        height: 100vh;
-        .container{
-            .center{
-                display: flex;
-                height: 100%;
-                align-items: center;
+        color: nth($colores, 3);
+        text-align: center;
+        padding: 30px;
+       
+        a{ text-decoration: none;}
+        
+        .contenedor__servicios{
+            @extend %flexcard;
+            max-width: 1200px;
+            margin: 50px auto;
+            
+
+            .contenedor__card{
                
+                margin: 20px;
+                border-radius: 20px;
+                &:hover figure{
+                    -webkit-transform: perspective(600px) rotateY(180deg);
+                    -ms-transform: perspective(600px) rotateY(180deg);
+                    -o-transform: perspective(600px) rotateY(180deg);
+                    transform: perspective(600px) rotateY(180deg);
+                }
+
+
+                a{
+                    display: inline-block;
+                }
+              
+              
+                figure{
+                    width: 300px;
+                    height: 350px;
+                    margin: 0;
+                    position: relative;
+                    transition: all ease .5s;
+                    transform-style: preserve-3d;
+                    transform: perspective(600px) rotateY(0deg);
+                    
+                    .front{
+                       @extend %tarjeta;
+                        img{
+                            width: 300px;
+                        }
+                        display: block;
+                        backface-visibility: hidden;
+                        width: 100%;
+                        height: 100%;
+                        transition: all ease .5s;
+                    }
+                    .back{
+                        @extend %tarjeta;
+                        position: absolute;
+                        top: 0;
+                        color: nth($colores, 3);
+                        padding: 20px;
+                        width: 100%;
+                        height: 100%;
+                        transition: all ease .5s;
+                        transform: perspective(600px) rotateY(180deg);
+                        backface-visibility: hidden;
+                        overflow: auto;
+                    }
+                    
+                }
                 
             }
         }
     }
-        
+       
 
 
     .footer { 
