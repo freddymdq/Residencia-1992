@@ -23,25 +23,3 @@
     align-items: center;
     justify-content: center;
 }
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-
-
-
-
-//CONDICIONES.
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
