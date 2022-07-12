@@ -11,7 +11,8 @@
 
 
 .contenedor{  
-    @include grid;
+        @include grid;
+
         @media screen and (max-width:480px) {
         grid-template-areas: 
         "header header header"
@@ -51,10 +52,10 @@
 
            
                 a img{
-                    width: 150px;
+                    width: 100px;
                     margin-left: 10vh;
                     @media screen and (max-width: 480px) {
-                        width: 150px;
+                        width: 5px;
                         margin-left: 2vh;
                         
                     }
