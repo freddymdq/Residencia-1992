@@ -330,13 +330,14 @@
   justify-content: space-around;
 }
 .contenedor .main .container-lg h2 {
-  padding-top: 20px;
-  color: white;
+  padding-top: 50px;
+  color: #17202A;
   font-size: 60px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .contenedor .main .container-lg h2 {
     font-size: 28px;
+    color: white;
   }
 }
 .contenedor .main .container-lg h1 {

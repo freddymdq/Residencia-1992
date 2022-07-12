@@ -2,6 +2,7 @@
 @import "../base/extends";
 @import "../base/listas";
 @import "../base/mixins";
+@import "../base/mapas";
 
 
 
@@ -85,12 +86,12 @@
             
 
                 h2{
-                    padding-top: 20px;
-                    color: nth($colores, 3);
+                    padding-top: 50px;
+                    color: map-get($mapa1, colorA);
                     font-size: 60px; 
-                    @media screen and (max-width:480px) {
+                    @media screen and (max-width:481px) {
                         font-size: 28px;
-                        
+                        color: nth($colores, 3);
                     }
                 }
                 h1{
