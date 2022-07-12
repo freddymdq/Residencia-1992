@@ -1,0 +1,89 @@
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/mixins";
+
+
+
+
+.contenedor{  
+    @include grid;
+    
+  
+  .header { 
+    grid-area: header;
+    background-color: nth($colores, 5);
+        .navbar{
+            
+            
+            .container-fluid{
+
+                a button{
+                    margin-right: 10vh;
+                    background: none;
+                    color: nth($colores, 2);
+                    border: 2px solid nth($colores, 2);
+                    border-radius: 15px;
+                    padding: 6px 10px;
+                    &:hover{
+                        font-weight: 400;
+                        color: nth($colores, 1);
+                        border: 2px solid nth($colores, 4);
+                        background-color: nth($colores, 4);
+                        
+                    }
+                    @media screen and (max-width:990px) {
+                        display: none;
+                        margin-right: 2vh;
+                        
+                    }
+                }
+
+           
+                a img{
+                    width: 150px;
+                    margin-left: 10vh;
+                    @media screen and (max-width: 480px) {
+                        width: 150px;
+                        margin-left: 2vh;
+                        
+                    }
+                }    
+            }
+        }
+    }
+    .main{ 
+        grid-area: main; 
+        
+        .container-fluid{
+             
+            @media screen and (max-width: 995px) {
+                height: 600px;
+                    
+                    
+            }   
+            img{
+                width: 90%;
+            
+            }
+        }
+            /*FIN MAIN*/
+        }
+
+    
+    .footer { 
+        @include footer;
+            #iconos i{
+                font-size: 50px;
+                padding: 0 10px;
+                @media screen and (max-width: 480px) {
+                font-size: 30px;
+                } 
+            }
+            
+    } 
+}
+
+  
+
+    
