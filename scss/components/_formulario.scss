@@ -1,0 +1,63 @@
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/mixins";
+
+
+
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/mixins";
+
+
+
+.contenedor{  
+    @include grid;
+    @extend %background-2;
+  
+  .header { 
+    grid-area: header;
+    @extend %background-2;
+    .navbar{
+        .btn{
+            @media screen and (max-width:990px) {
+                display: none;
+                
+            }
+        }
+    }
+  }
+
+    .formulario{ 
+        grid-area: main; 
+       
+        color: nth($colores, 3);
+        text-align: center;
+        margin: 50px;
+            .container{
+                width: 100%;
+    
+            }
+       
+       
+        
+                    
+                }       
+    
+    .footer { 
+        @extend %background-2;
+        @include footer;
+        
+        #iconos i{
+            font-size: 50px;
+            padding: 0 10px;
+            @media screen and (max-width: 480px) {
+             font-size: 30px;
+             
+            } 
+        }
+    }
+}       
+
+    

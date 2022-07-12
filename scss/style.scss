@@ -7,45 +7,7 @@
 @import "./components/galeria";
 @import "./components/servicios";
 @import "./components/contacto";
+@import "./components/formulario";
+@import "./components/detalles";
 
-.contenedor{  
-    @include grid;
-  
-  .header { 
-    grid-area: header;
-    background-color: nth($colores, 5);
-  }
-
-    .main-servicios{ 
-        grid-area: main; 
-        background-color: nth($colores, 1);
-        height: 100vh;
-        .container{
-            .center{
-                display: flex;
-                height: 100%;
-                align-items: center;
-               
-                
-            }
-        }
-    }
-        
-
-
-    .footer { 
-        @include footer;
-            #iconos i{
-                font-size: 50px;
-                padding: 0 10px;
-                @media screen and (max-width: 480px) {
-                font-size: 30px;
-             
-            } 
-        }
-            
-        } 
-        
-    }
-       
             
