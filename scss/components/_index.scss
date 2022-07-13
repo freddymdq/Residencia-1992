@@ -27,9 +27,14 @@
     background-color: nth($colores, 5);
         .navbar{
             
-            
-            .container-lg{
+            .container-fluid{
+
                 
+                .navbar-brand img{
+                    width: 80px;
+                    
+                }
+
                 a button{
                     margin-right: 10vh;
                     background: none;
@@ -51,16 +56,6 @@
                     }
                 }
 
-           
-                a img{
-                    width: 100px;
-                    margin-left: 10vh;
-                    @media screen and (max-width: 480px) {
-                        width: 5px;
-                        margin-left: 2vh;
-                        
-                    }
-                }    
             }
         }
     }
@@ -121,33 +116,6 @@
                     }
                 }
             
-        }
-        #imagen{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            
-        }
-        .container{
-            margin-top: 3%;
-            
-
-            h2{
-                color: nth($colores, 1);
-                font-size: 50px;
-            }
-
-            
-            .inner{
-                overflow: hidden;
-            }
-            .inner img{
-                transition: all 1.5s ease;
-                &:hover{
-                    transform: scale(1.5);
-                }
-            }
-            /*FIN MAIN*/
         }
 
     }

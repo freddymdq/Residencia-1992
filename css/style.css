@@ -64,23 +64,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 * {
   padding: 0;
   margin: 0;
@@ -129,23 +112,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -167,6 +133,7 @@
   text-align: center;
 }
 .contenedor .container-fluid .informacion h1 {
+  font-weight: bold;
   color: #212121;
 }
 .contenedor .container-fluid .informacion p {
@@ -178,6 +145,7 @@
   }
 }
 .contenedor .container-fluid .informacion h2 {
+  font-weight: bold;
   color: #212121;
   margin-bottom: 30px;
 }
@@ -252,23 +220,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -285,7 +236,10 @@
   grid-area: header;
   background-color: #17202A;
 }
-.contenedor .header .navbar .container-lg a button {
+.contenedor .header .navbar .container-fluid .navbar-brand img {
+  width: 80px;
+}
+.contenedor .header .navbar .container-fluid a button {
   margin-right: 10vh;
   background: none;
   color: #2980B9;
@@ -293,26 +247,16 @@
   border-radius: 15px;
   padding: 6px 10px;
 }
-.contenedor .header .navbar .container-lg a button:hover {
+.contenedor .header .navbar .container-fluid a button:hover {
   font-weight: 400;
   color: #212121;
   border: 2px solid #cc0d0d;
   background-color: #cc0d0d;
 }
 @media screen and (max-width: 990px) {
-  .contenedor .header .navbar .container-lg a button {
+  .contenedor .header .navbar .container-fluid a button {
     display: none;
     margin-right: 2vh;
-  }
-}
-.contenedor .header .navbar .container-lg a img {
-  width: 100px;
-  margin-left: 10vh;
-}
-@media screen and (max-width: 480px) {
-  .contenedor .header .navbar .container-lg a img {
-    width: 5px;
-    margin-left: 2vh;
   }
 }
 .contenedor .main {
@@ -367,28 +311,6 @@
   .contenedor .main .p2 {
     font-size: 15px;
   }
-}
-.contenedor #imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.contenedor .container {
-  margin-top: 3%;
-  /*FIN MAIN*/
-}
-.contenedor .container h2 {
-  color: #212121;
-  font-size: 50px;
-}
-.contenedor .container .inner {
-  overflow: hidden;
-}
-.contenedor .container .inner img {
-  transition: all 1.5s ease;
-}
-.contenedor .container .inner img:hover {
-  transform: scale(1.5);
 }
 
 .footer {
@@ -456,23 +378,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -530,6 +435,7 @@
   justify-content: space-around;
 }
 .contenedor .main .container-lg h1 {
+  font-weight: bold;
   font-size: 70px;
   color: white;
 }
@@ -617,23 +523,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -655,6 +544,7 @@
   text-align: center;
 }
 .contenedor .container-fluid h1 {
+  font-weight: bold;
   color: white;
   padding-top: 40px;
 }
@@ -674,6 +564,11 @@
   -ms-transform: perspective(600px) rotateY(180deg);
   -o-transform: perspective(600px) rotateY(180deg);
   transform: perspective(600px) rotateY(180deg);
+}
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid .contenedor__servicios .contenedor__card:hover figure {
+    display: none;
+  }
 }
 .contenedor .container-fluid .contenedor__servicios .contenedor__card a {
   display: inline-block;
@@ -700,6 +595,11 @@
   height: 100%;
   transition: all ease 0.5s;
 }
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid .contenedor__servicios .contenedor__card figure .front {
+    display: none;
+  }
+}
 .contenedor .container-fluid .contenedor__servicios .contenedor__card figure .front img {
   width: 300px;
 }
@@ -717,6 +617,12 @@
   transform: perspective(600px) rotateY(180deg);
   backface-visibility: hidden;
   overflow: auto;
+}
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid .contenedor__servicios .contenedor__card figure .back {
+    backface-visibility: visible;
+    transform: perspective(600px) rotateY(0deg);
+  }
 }
 .contenedor .container-fluid .contenedor__servicios .contenedor__card figure .back h2 {
   font-size: 30px;
@@ -797,23 +703,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -870,15 +759,18 @@
   flex-direction: column;
 }
 .contenedor .main .container h1 {
+  font-size: 40px;
+  font-weight: bold;
   margin-top: 30px;
 }
 .contenedor .main .container p {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .contenedor .main .container p {
-    font-size: 12px;
+    font-size: 22px;
+    margin: 10px 5px;
   }
 }
 
@@ -947,23 +839,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 * {
   padding: 0;
   margin: 0;
@@ -1012,23 +887,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1118,23 +976,6 @@
   box-sizing: border-box;
 }
 
-/*
-@mixin varios ($ancho, $display, $center){
-    width: $ancho;
-    display: $display;
-    justify-content: $center;
-
-@include varios( 50% , grid , flex-end )
-}*/
-/*@mixin condicion ($colores){
-    background-color: $colores;
-
-    @if $colores == red{
-        border: 1px solid black
-    } @else{
-        border: 3px dotted blue;
-    }
-}*/
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

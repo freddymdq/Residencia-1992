@@ -68,15 +68,18 @@
                 flex-direction: column;
                
                 h1{
+                    font-size: 40px;
+                    font-weight: bold;
                     margin-top: 30px;
 
                 }
                 p{
                    
                     color: nth($colores, 3);
-                    font-size: 20px;
-                    @media screen and (max-width:380px) {
-                        font-size: 12px;
+                    font-size: 30px;
+                    @media screen and (max-width:480px) {
+                        font-size: 22px;
+                        margin: 10px 5px;
                     }
                 }
             }

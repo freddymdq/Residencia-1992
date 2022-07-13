@@ -28,6 +28,7 @@
         text-align: center;
         .informacion{
             h1{
+                font-weight: bold;
                 color: nth($colores, 1)
             }
             p{
@@ -38,6 +39,7 @@
                 }
             }
             h2{
+                font-weight: bold;
                 color: nth($colores, 1);
                 margin-bottom: 30px;
             }

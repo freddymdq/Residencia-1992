@@ -31,6 +31,7 @@
         text-align: center;
        
         h1{
+            font-weight: bold;
             color: nth($colores, 3);
             padding-top: 40px;
         }
@@ -53,17 +54,22 @@
                
                 margin: 30px;
                 border-radius: 20px;
+               
                 &:hover figure{
                     -webkit-transform: perspective(600px) rotateY(180deg);
                     -ms-transform: perspective(600px) rotateY(180deg);
                     -o-transform: perspective(600px) rotateY(180deg);
                     transform: perspective(600px) rotateY(180deg);
+                    @media screen and (max-width:480px) {
+                        display: none;
+                       }
                  
                 }
 
 
                 a{
                     display: inline-block;
+                    
                 }
               
               
@@ -84,14 +90,20 @@
                     .front{
                        @extend %tarjeta;
                        @extend %background-2;
+                       @media screen and (max-width:480px) {
+                        display: none;
+                       }
+                       
                         img{
                             width: 300px;
+                            
                         }
                         display: block;
                         backface-visibility: hidden;
                         width: 100%;
                         height: 100%;
                         transition: all ease .5s;
+                        
                     }
                     .back{
                         @extend %background-2;
@@ -109,6 +121,11 @@
                         transform: perspective(600px) rotateY(180deg);
                         backface-visibility: hidden;
                         overflow: auto;
+                        @media screen and (max-width:480px) {
+                            backface-visibility: visible;
+                            transform: perspective(600px) rotateY(0deg);
+                        }
+
                         h2{
                             
                             font-size: 30px;

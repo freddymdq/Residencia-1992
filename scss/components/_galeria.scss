@@ -71,7 +71,7 @@
             justify-content: space-around;
             
                 h1{
-                   
+                    font-weight: bold;
                     font-size: 70px;
                     color: nth($colores, 3);
                     @media screen and (max-width:480px) {
