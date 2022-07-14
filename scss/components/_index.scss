@@ -25,9 +25,11 @@
   .header { 
     grid-area: header;
     background-color: nth($colores, 5);
+   
         .navbar{
             
             .container-fluid{
+                
 
                 
                 .navbar-brand img{

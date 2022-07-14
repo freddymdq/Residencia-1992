@@ -5,12 +5,6 @@
 
 
 
-@import "../base/variables";
-@import "../base/extends";
-@import "../base/listas";
-@import "../base/mixins";
-
-
 
 .contenedor{  
     @include grid;
