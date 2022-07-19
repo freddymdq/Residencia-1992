@@ -28,8 +28,12 @@
         text-align: center;
         .informacion{
             h1{
+                font-size: 50px;
                 font-weight: bold;
-                color: nth($colores, 1)
+                color: nth($colores, 1);
+                @media screen and (max-width:480px){
+                    font-size: 30px;
+                }
             }
             p{
                 padding: 0px 40px;
@@ -39,9 +43,13 @@
                 }
             }
             h2{
+                font-size: 50px;
                 font-weight: bold;
                 color: nth($colores, 1);
                 margin-bottom: 30px;
+                @media screen and (max-width:480px){
+                    font-size: 30px;
+                }
             }
             .mapa{
                 iframe{

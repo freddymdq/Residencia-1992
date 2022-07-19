@@ -33,11 +33,18 @@
         h1{
             font-weight: bold;
             color: nth($colores, 3);
-            padding-top: 40px;
+            padding-top: 50px;
             font-size: 70px;
+            @media screen and (max-width: 480px) {
+                font-size: 40px;
+            }
         }
        .infoserv{
+        margin-top: 40px;
         font-size: 30px;
+        @media screen and (max-width: 480px) {
+            font-size: 20px;
+        }
        }
        
        // parrafos tarjetas

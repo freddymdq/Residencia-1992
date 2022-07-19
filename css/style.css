@@ -131,8 +131,14 @@
   text-align: center;
 }
 .contenedor .container-fluid .informacion h1 {
+  font-size: 50px;
   font-weight: bold;
   color: #212121;
+}
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid .informacion h1 {
+    font-size: 30px;
+  }
 }
 .contenedor .container-fluid .informacion p {
   padding: 0px 40px;
@@ -143,9 +149,15 @@
   }
 }
 .contenedor .container-fluid .informacion h2 {
+  font-size: 50px;
   font-weight: bold;
   color: #212121;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid .informacion h2 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 580) {
   .contenedor .container-fluid .informacion .mapa iframe {
@@ -524,11 +536,22 @@
 .contenedor .container-fluid h1 {
   font-weight: bold;
   color: white;
-  padding-top: 40px;
+  padding-top: 50px;
   font-size: 70px;
 }
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid h1 {
+    font-size: 40px;
+  }
+}
 .contenedor .container-fluid .infoserv {
+  margin-top: 40px;
   font-size: 30px;
+}
+@media screen and (max-width: 480px) {
+  .contenedor .container-fluid .infoserv {
+    font-size: 20px;
+  }
 }
 .contenedor .container-fluid p {
   font-size: 20px;
