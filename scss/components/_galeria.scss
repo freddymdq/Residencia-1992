@@ -25,27 +25,7 @@
             
             .container-fluid{
 
-                a button{
-                    margin-right: 10vh;
-                    background: none;
-                    color: nth($colores, 2);
-                    border: 2px solid nth($colores, 2);
-                    border-radius: 15px;
-                    padding: 6px 10px;
-                    &:hover{
-                        font-weight: 400;
-                        color: nth($colores, 1);
-                        border: 2px solid nth($colores, 4);
-                        background-color: nth($colores, 4);
-                        
-                    }
-                    @media screen and (max-width:990px) {
-                        display: none;
-                        margin-right: 2vh;
-                        
-                    }
-                }
-
+               
            
                 a img{
                     width: 150px;
@@ -63,34 +43,25 @@
         grid-area: main; 
         background-color: nth($colores, 1);
         
-        .container-lg{
-            padding-top: 50px ;
-            color: nth($colores, 3 );
-            @extend %flexbox;
-            flex-direction: column;
-            justify-content: space-around;
-            
-                h1{
-                    font-weight: bold;
-                    font-size: 70px;
-                    color: nth($colores, 3);
-                    @media screen and (max-width:480px) {
-                        font-size: 35px;
-                    }
-                }
-                
-            
-        }
         #imagen{
             @extend %img
             
         }
+        
         #contenedor-galeria{
             margin-top: 40px;
             margin-bottom: 60px;
-           
-
-            
+            h1{
+                font-weight: bold;
+                font-size: 70px;
+                color: nth($colores, 3);
+                @media screen and (max-width:480px) {
+                    font-size: 35px;
+                }
+            }
+            p{
+                font-size: 20px;
+            }
             .inner{
                 overflow: hidden;
             }

@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container, .contenedor .main .container-lg {
+.main .container, .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -68,7 +68,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container, .contenedor .main .container-lg {
+.main .container, .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -176,7 +176,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container, .contenedor .main .container-lg {
+.main .container, .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -274,7 +274,7 @@
 .contenedor .main .container-lg h2 {
   padding-top: 50px;
   color: #17202A;
-  font-size: 60px;
+  font-size: 80px;
 }
 @media screen and (max-width: 481px) {
   .contenedor .main .container-lg h2 {
@@ -283,7 +283,7 @@
   }
 }
 .contenedor .main .container-lg h1 {
-  font-size: 70px;
+  font-size: 150px;
 }
 @media screen and (max-width: 480px) {
   .contenedor .main .container-lg h1 {
@@ -292,7 +292,7 @@
 }
 .contenedor .main p {
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px 20px;
 }
 @media screen and (max-width: 480px) {
@@ -302,13 +302,16 @@
   }
 }
 .contenedor .main .p2 {
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px 30px;
 }
 @media screen and (max-width: 480px) {
   .contenedor .main .p2 {
     font-size: 15px;
   }
+}
+.contenedor .main .container-md h3 {
+  font-size: 70px;
 }
 
 .footer {
@@ -334,7 +337,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container, .contenedor .main .container-lg {
+.main .container, .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -392,26 +395,6 @@
   grid-area: header;
   background-color: #17202A;
 }
-.contenedor .header .navbar .container-fluid a button {
-  margin-right: 10vh;
-  background: none;
-  color: #2980B9;
-  border: 2px solid #2980B9;
-  border-radius: 15px;
-  padding: 6px 10px;
-}
-.contenedor .header .navbar .container-fluid a button:hover {
-  font-weight: 400;
-  color: #212121;
-  border: 2px solid #cc0d0d;
-  background-color: #cc0d0d;
-}
-@media screen and (max-width: 990px) {
-  .contenedor .header .navbar .container-fluid a button {
-    display: none;
-    margin-right: 2vh;
-  }
-}
 .contenedor .header .navbar .container-fluid a img {
   width: 150px;
   margin-left: 10vh;
@@ -426,26 +409,23 @@
   grid-area: main;
   background-color: #212121;
 }
-.contenedor .main .container-lg {
-  padding-top: 50px;
-  color: white;
-  flex-direction: column;
-  justify-content: space-around;
+.contenedor .main #contenedor-galeria {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  /*FIN MAIN*/
 }
-.contenedor .main .container-lg h1 {
+.contenedor .main #contenedor-galeria h1 {
   font-weight: bold;
   font-size: 70px;
   color: white;
 }
 @media screen and (max-width: 480px) {
-  .contenedor .main .container-lg h1 {
+  .contenedor .main #contenedor-galeria h1 {
     font-size: 35px;
   }
 }
-.contenedor .main #contenedor-galeria {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  /*FIN MAIN*/
+.contenedor .main #contenedor-galeria p {
+  font-size: 20px;
 }
 .contenedor .main #contenedor-galeria .inner {
   overflow: hidden;
@@ -479,7 +459,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container, .contenedor .main .container-lg {
+.main .container, .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -545,6 +525,13 @@
   font-weight: bold;
   color: white;
   padding-top: 40px;
+  font-size: 70px;
+}
+.contenedor .container-fluid .infoserv {
+  font-size: 30px;
+}
+.contenedor .container-fluid p {
+  font-size: 20px;
 }
 .contenedor .container-fluid a {
   text-decoration: none;
@@ -659,7 +646,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container, .contenedor .main .container-lg {
+.main .container, .contenedor .main .container-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -712,61 +699,42 @@
   grid-area: header;
   background-color: #17202A;
 }
-.contenedor .header .navbar .container-fluid a button {
-  margin-right: 10vh;
-  background: none;
-  color: #2980B9;
-  border: 2px solid #2980B9;
-  border-radius: 15px;
-  padding: 6px 10px;
-}
-.contenedor .header .navbar .container-fluid a button:hover {
-  font-weight: 400;
-  color: #212121;
-  border: 2px solid #cc0d0d;
-  background-color: #cc0d0d;
-}
-@media screen and (max-width: 990px) {
-  .contenedor .header .navbar .container-fluid a button {
-    display: none;
-    margin-right: 2vh;
-  }
-}
-.contenedor .header .navbar .container-fluid a img {
+.contenedor .header a img {
   width: 150px;
   margin-left: 10vh;
 }
 @media screen and (max-width: 480px) {
-  .contenedor .header .navbar .container-fluid a img {
+  .contenedor .header a img {
     width: 150px;
     margin-left: 2vh;
   }
 }
-.contenedor .main {
+
+.main {
   grid-area: main;
   background-color: #212121;
   /*FIN MAIN*/
 }
 @media screen and (max-width: 480px) {
-  .contenedor .main .carusel {
+  .main .carusel {
     display: contents;
   }
 }
-.contenedor .main .container {
+.main .container {
   margin-bottom: 50px;
   flex-direction: column;
 }
-.contenedor .main .container h1 {
+.main .container h1 {
   font-size: 40px;
   font-weight: bold;
   margin-top: 30px;
 }
-.contenedor .main .container p {
+.main .container p {
   color: white;
   font-size: 30px;
 }
 @media screen and (max-width: 480px) {
-  .contenedor .main .container p {
+  .main .container p {
     font-size: 22px;
     margin: 10px 5px;
   }
@@ -795,7 +763,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container-lg, .contenedor .main .container {
+.contenedor .main .container-lg, .main .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -884,7 +852,7 @@
   box-sizing: border-box;
 }
 
-.contenedor .main .container-lg, .contenedor .main .container {
+.contenedor .main .container-lg, .main .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;

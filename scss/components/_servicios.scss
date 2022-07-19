@@ -34,10 +34,18 @@
             font-weight: bold;
             color: nth($colores, 3);
             padding-top: 40px;
+            font-size: 70px;
         }
+       .infoserv{
+        font-size: 30px;
+       }
        
-        
-       
+       // parrafos tarjetas
+       p{
+        font-size: 20px;
+       }
+
+        //ancor tarjeta servicios
         a{ 
             text-decoration: none;
               

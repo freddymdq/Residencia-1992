@@ -85,7 +85,7 @@
                 h2{
                     padding-top: 50px;
                     color: map-get($mapa1, colorA);
-                    font-size: 60px; 
+                    font-size: 80px; 
                     @media screen and (max-width:481px) {
                         font-size: 28px;
                         color: nth($colores, 3);
@@ -93,7 +93,7 @@
                 }
                 h1{
                     
-                    font-size: 70px;
+                    font-size: 150px;
                     @media screen and (max-width:480px) {
                         font-size: 25px;
                     }
@@ -103,7 +103,7 @@
                 }
                 p{
                     margin-top: 40px;
-                    font-size: 20px;
+                    font-size: 30px;
                     padding: 10px 20px;
                     @media screen and (max-width:480px) {
                         font-size: 15px;
@@ -111,13 +111,17 @@
                     }
                 }
                 .p2{
-                    font-size: 20px;
+                    font-size: 30px;
                     padding: 10px 30px;
                     @media screen and (max-width:480px) {
                         font-size: 15px;
                     }
                 }
-            
+        .container-md{
+            h3{
+                font-size: 70px
+            }
+        }   
         }
 
     }
