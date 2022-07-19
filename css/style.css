@@ -266,7 +266,6 @@
 @media screen and (max-width: 990px) {
   .contenedor .header .navbar .container-fluid a button {
     display: none;
-    margin-right: 2vh;
   }
 }
 .contenedor .main {
@@ -295,7 +294,7 @@
   }
 }
 .contenedor .main .container-lg h1 {
-  font-size: 150px;
+  font-size: 70px;
 }
 @media screen and (max-width: 480px) {
   .contenedor .main .container-lg h1 {
@@ -409,12 +408,10 @@
 }
 .contenedor .header .navbar .container-fluid a img {
   width: 150px;
-  margin-left: 10vh;
 }
 @media screen and (max-width: 480px) {
   .contenedor .header .navbar .container-fluid a img {
-    width: 150px;
-    margin-left: 2vh;
+    width: 120px;
   }
 }
 .contenedor .main {
@@ -724,12 +721,10 @@
 }
 .contenedor .header a img {
   width: 150px;
-  margin-left: 10vh;
 }
 @media screen and (max-width: 480px) {
   .contenedor .header a img {
     width: 150px;
-    margin-left: 2vh;
   }
 }
 

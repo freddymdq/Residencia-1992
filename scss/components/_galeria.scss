@@ -29,10 +29,9 @@
            
                 a img{
                     width: 150px;
-                    margin-left: 10vh;
                     @media screen and (max-width: 480px) {
-                        width: 150px;
-                        margin-left: 2vh;
+                        width: 120px;
+                        
                         
                     }
                 }    
