@@ -322,7 +322,7 @@
   }
 }
 .contenedor .main .container-md h3 {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .footer {
@@ -720,11 +720,11 @@
   background-color: #17202A;
 }
 .contenedor .header a img {
-  width: 150px;
+  width: 100px;
 }
 @media screen and (max-width: 480px) {
   .contenedor .header a img {
-    width: 150px;
+    width: 100px;
   }
 }
 
@@ -924,7 +924,6 @@
   background-color: #17202A;
 }
 .contenedor .header .navbar .container-fluid a button {
-  margin-right: 10vh;
   background: none;
   color: #2980B9;
   border: 2px solid #2980B9;
@@ -940,7 +939,6 @@
 @media screen and (max-width: 990px) {
   .contenedor .header .navbar .container-fluid a button {
     display: none;
-    margin-right: 2vh;
   }
 }
 .contenedor .header .navbar .container-fluid a img {

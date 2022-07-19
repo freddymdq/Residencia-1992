@@ -19,7 +19,7 @@
             .container-fluid{
 
                 a button{
-                    margin-right: 10vh;
+                   
                     background: none;
                     color: nth($colores, 2);
                     border: 2px solid nth($colores, 2);
@@ -34,7 +34,7 @@
                     }
                     @media screen and (max-width:990px) {
                         display: none;
-                        margin-right: 2vh;
+                        
                         
                     }
                 }
