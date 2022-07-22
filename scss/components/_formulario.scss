@@ -5,11 +5,11 @@
 
 
 
-
+//BODY
 .contenedor{  
     @include grid;
     @extend %background-2;
-  
+  // HEADER
   .header { 
     grid-area: header;
     @extend %background-2;
@@ -22,7 +22,7 @@
         }
     }
   }
-
+    //MAIN
     .formulario{ 
         grid-area: main; 
        
@@ -31,14 +31,9 @@
         margin: 50px;
             .container{
                 width: 100%;
-    
-            }
-       
-       
-        
-                    
-                }       
-    
+            }  
+    }       
+    //FOOTER
     .footer { 
         @extend %background-2;
         @include footer;

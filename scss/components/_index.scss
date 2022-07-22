@@ -10,7 +10,7 @@
     @extend %background-2;
 }
 
-
+//BODY
 .contenedor{  
         @include grid;
 
@@ -19,26 +19,19 @@
         "header header header"
         "main main main"
         "footer footer footer";
-
-      }
-  
+        }
+  //HEADER
   .header { 
     grid-area: header;
-    background-color: nth($colores, 5);
-   
+    background-color: nth($colores, 5); 
         .navbar{
-            
-            .container-fluid{
-                
-
-                
+            .container-fluid{ 
+                //LOGO  
                 .navbar-brand img{
                     width: 80px;
-                    
                 }
-
+                // BOTON RESERVA
                 a button{
-                    margin-right: 10vh;
                     background: none;
                     color: nth($colores, 2);
                     border: 2px solid nth($colores, 2);
@@ -61,27 +54,22 @@
             }
         }
     }
-
+    // MAIN
     .main { 
         grid-area: main; 
         @extend %background-1;
 
         #carusel{
-
             @media screen and (max-width: 480px) {
-                display: none;
-                
+                display: none;    
             }
-        }
-        
+        }       
         .container-lg{
             padding-top: 40px ;
             color: nth($colores, 3 );
             @extend %flexbox;
             flex-direction: column;
             justify-content: space-around;
-            
-
                 h2{
                     padding-top: 50px;
                     color: map-get($mapa1, colorA);
@@ -92,15 +80,13 @@
                     }
                 }
                 h1{
-                    
                     font-size: 70px;
+
                     @media screen and (max-width:480px) {
                         font-size: 25px;
-                    }
-                    
-                        
-                    }
+                    }                  
                 }
+    }
                 p{
                     margin-top: 40px;
                     font-size: 30px;
@@ -117,16 +103,16 @@
                         font-size: 15px;
                     }
                 }
-        .container-md{
-            h3{
-                font-size: 50px
-            }
-        }   
+            .container-md{
+                h3{
+                    font-size: 50px
+                }
+            }   
         }
 
     }
 
-
+    // FOOTER
     .footer { 
         @include footer;
             #iconos i{

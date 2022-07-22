@@ -5,7 +5,7 @@
 
 
 
-
+//BODY
 .contenedor{  
     @include grid;
     
@@ -16,28 +16,12 @@
         "footer footer footer";
 
       }
-  
+  //HEADER
   .header { 
     grid-area: header;
     background-color: nth($colores, 5);
-        .navbar{
-            
-            
-            .container-fluid{
-
-               
-           
-                a img{
-                    width: 150px;
-                    @media screen and (max-width: 480px) {
-                        width: 120px;
-                        
-                        
-                    }
-                }    
-            }
-        }
     }
+    //MAIN
     .main { 
         grid-area: main; 
         background-color: nth($colores, 1);
@@ -74,6 +58,7 @@
         }
 
     }
+    //FOOTER
     .footer { 
         @include footer;
             #iconos i{

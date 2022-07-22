@@ -5,25 +5,16 @@
 
 
 
-
+//BODY
 .contenedor{  
     @include grid;
     @extend %background-2;
-  
+  //HEADER
   .header { 
     grid-area: header;
     @extend %background-2;
-    .navbar{
-        .btn{
-            
-            @media screen and (max-width:990px) {
-                display: none;
-                
-            }
-        }
-    }
   }
-
+  //MAIN
     .container-fluid{ 
         grid-area: main; 
         @extend %background-2;
@@ -40,8 +31,9 @@
             }
         }
        .infoserv{
-        margin-top: 40px;
-        font-size: 30px;
+        padding: 80px;
+        margin-top: 20px;
+        font-size: 20px;
         @media screen and (max-width: 480px) {
             font-size: 20px;
         }
@@ -64,7 +56,7 @@
             margin: 50px auto;
             
             
-
+            // TARJETAS GIRATORIAS
             .contenedor__card{
                
                 margin: 30px;
@@ -75,10 +67,10 @@
                     -ms-transform: perspective(600px) rotateY(180deg);
                     -o-transform: perspective(600px) rotateY(180deg);
                     transform: perspective(600px) rotateY(180deg);
+                    
                     @media screen and (max-width:480px) {
                         display: none;
                        }
-                 
                 }
 
 
@@ -86,7 +78,6 @@
                     display: inline-block;
                     
                 }
-              
               
                 figure{
                     width: 300px;
@@ -167,7 +158,7 @@
     }
        
 
-
+ // FOOTER
     .footer { 
         @extend %background-2;
         @include footer;

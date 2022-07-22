@@ -3,24 +3,16 @@
 @import "../base/listas";
 @import "../base/mixins";
 
-
+//BODY
 .contenedor{  
     @include grid;
     @extend %background-2;
-  
+  //HEADER
   .header { 
     grid-area: header;
     @extend %background-2;
-    .navbar{
-        .btn{
-            @media screen and (max-width:990px) {
-                display: none;
-                
-            }
-        }
-    }
   }
-
+    //MAIN
     .container-fluid{ 
         grid-area: main; 
         @extend %background-2;
@@ -63,7 +55,7 @@
         }
        
     }
-
+    //FOOTER
     .footer { 
         @extend %background-2;
         @include footer;

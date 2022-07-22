@@ -120,11 +120,6 @@
 .contenedor .header {
   grid-area: header;
 }
-@media screen and (max-width: 990px) {
-  .contenedor .header .navbar .btn {
-    display: none;
-  }
-}
 .contenedor .container-fluid {
   grid-area: main;
   color: white;
@@ -250,7 +245,6 @@
   width: 80px;
 }
 .contenedor .header .navbar .container-fluid a button {
-  margin-right: 10vh;
   background: none;
   color: #2980B9;
   border: 2px solid #2980B9;
@@ -406,14 +400,6 @@
   grid-area: header;
   background-color: #17202A;
 }
-.contenedor .header .navbar .container-fluid a img {
-  width: 150px;
-}
-@media screen and (max-width: 480px) {
-  .contenedor .header .navbar .container-fluid a img {
-    width: 120px;
-  }
-}
 .contenedor .main {
   grid-area: main;
   background-color: #212121;
@@ -520,11 +506,6 @@
 .contenedor .header {
   grid-area: header;
 }
-@media screen and (max-width: 990px) {
-  .contenedor .header .navbar .btn {
-    display: none;
-  }
-}
 .contenedor .container-fluid {
   grid-area: main;
   color: white;
@@ -542,8 +523,9 @@
   }
 }
 .contenedor .container-fluid .infoserv {
-  margin-top: 40px;
-  font-size: 30px;
+  padding: 80px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 @media screen and (max-width: 480px) {
   .contenedor .container-fluid .infoserv {
@@ -724,7 +706,7 @@
 }
 @media screen and (max-width: 480px) {
   .contenedor .header a img {
-    width: 100px;
+    width: 100p;
   }
 }
 
@@ -922,34 +904,6 @@
 .contenedor .header {
   grid-area: header;
   background-color: #17202A;
-}
-.contenedor .header .navbar .container-fluid a button {
-  background: none;
-  color: #2980B9;
-  border: 2px solid #2980B9;
-  border-radius: 15px;
-  padding: 6px 10px;
-}
-.contenedor .header .navbar .container-fluid a button:hover {
-  font-weight: 400;
-  color: #212121;
-  border: 2px solid #cc0d0d;
-  background-color: #cc0d0d;
-}
-@media screen and (max-width: 990px) {
-  .contenedor .header .navbar .container-fluid a button {
-    display: none;
-  }
-}
-.contenedor .header .navbar .container-fluid a img {
-  width: 150px;
-  margin-left: 10vh;
-}
-@media screen and (max-width: 480px) {
-  .contenedor .header .navbar .container-fluid a img {
-    width: 150px;
-    margin-left: 2vh;
-  }
 }
 .contenedor .main {
   grid-area: main;
