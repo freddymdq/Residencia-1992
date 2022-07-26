@@ -60,39 +60,41 @@
         @extend %background-1;
 
         #carusel{
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 420px) {
                 display: none;    
             }
         }       
         .container-lg{
-            padding-top: 40px ;
+            padding-top: 30px ;
             color: nth($colores, 3 );
             @extend %flexbox;
             flex-direction: column;
             justify-content: space-around;
                 h2{
-                    padding-top: 50px;
+                    padding-top: 30px;
                     color: map-get($mapa1, colorA);
-                    font-size: 80px; 
+                    font-size: 60px; 
+                    font-weight: bold;
                     @media screen and (max-width:481px) {
-                        font-size: 28px;
+                        font-size: 40px;
                         color: nth($colores, 3);
                     }
                 }
                 h1{
+                    font-weight: bold;
                     font-size: 70px;
 
                     @media screen and (max-width:480px) {
-                        font-size: 25px;
+                        font-size: 40px;
                     }                  
                 }
     }
                 p{
-                    margin-top: 40px;
+                    margin-top: 30px;
                     font-size: 30px;
                     padding: 10px 20px;
                     @media screen and (max-width:480px) {
-                        font-size: 15px;
+                        font-size: 20px;
                         padding: 10px 10px;
                     }
                 }
@@ -100,12 +102,12 @@
                     font-size: 30px;
                     padding: 10px 30px;
                     @media screen and (max-width:480px) {
-                        font-size: 15px;
+                        font-size: 20px;
                     }
                 }
             .container-md{
                 h3{
-                    font-size: 50px
+                    font-size: 30px
                 }
             }   
         }
